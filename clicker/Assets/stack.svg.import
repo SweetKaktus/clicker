@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6yamdib3vrli"
-path="res://.godot/imported/snow_ball_pressed.png-c13d5dbf3d594c3cf857f006e5bf5b3f.ctex"
+uid="uid://dtjgeq3arkkqv"
+path="res://.godot/imported/stack.svg-83d47ecfce4015d9dc86cf5b845972f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/snow_ball_pressed.png"
-dest_files=["res://.godot/imported/snow_ball_pressed.png-c13d5dbf3d594c3cf857f006e5bf5b3f.ctex"]
+source_file="res://Assets/stack.svg"
+dest_files=["res://.godot/imported/stack.svg-83d47ecfce4015d9dc86cf5b845972f1.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
