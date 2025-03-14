@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://erj0atwwk6xc"]
+
+[ext_resource type="FontFile" uid="uid://c5ixsst4wuxk1" path="res://Assets/gui/Pacifico-Regular.ttf" id="1_31jqo"]
+
+[resource]
+font = ExtResource("1_31jqo")
+font_size = 24
+font_color = Color(0.176471, 0.176471, 0.176471, 1)

@@ -1,11 +1,31 @@
 extends Node
 
+var seconde_main : ShopItem
+var lutin_exploite : ShopItem
+var union_fait_force : ShopItem
+var usine : ShopItem
 
-var shop_items = [
-	{"label": "Seconde main", "texture" : "res://Assets/gui/beer-stein.svg", "is_active" : false},
-	{"label": "Lutin exploité", "texture" : "res://Assets/gui/caveman.svg", "is_active" : false},
-	{"label": "L'union fait la force", "texture" : "res://Assets/gui/waterskin.svg", "is_active" : false},
-	{"label": "Usine", "texture" : "res://Assets/gui/hut.svg", "is_active" : false},
+var seconde_main_icon = preload("res://Assets/gui/beer-stein.svg")
+var lutin_exploite_icon = preload("res://Assets/gui/caveman.svg")
+var union_fait_force_icon = preload("res://Assets/gui/waterskin.svg")
+var usine_icon = preload("res://Assets/gui/hut.svg")
+
+func _ready() -> void:
+	seconde_main = ShopItem.new()
+	lutin_exploite = ShopItem.new()
+	union_fait_force = ShopItem.new()
+	usine = ShopItem.new()
+	seconde_main.initialiser("Seconde main", seconde_main_icon, 2)
+	lutin_exploite.initialiser("Lutin exploité", lutin_exploite_icon, 2)
+	union_fait_force.initialiser("L'union fait la force", union_fait_force_icon, 5)
+	usine.initialiser("Usine", usine_icon, 10)
+
+
+var shop_items: Array = [
+	seconde_main,
+	lutin_exploite,
+	union_fait_force,
+	usine
 ]
 
 var icons_for_check_box = {

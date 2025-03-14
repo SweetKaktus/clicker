@@ -17,7 +17,7 @@ func _ready() -> void:
 	displayed_position = position - Vector2(0, 350)
 	is_shop_active = false
 	for element in EVENTBUS.shop_items:
-		add_element_to_shop(element["label"], element["texture"])
+		add_element_to_shop(element.label, element.texture, element.amount_needed)
 	
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -39,7 +39,7 @@ func _on_shop_button_pressed() -> void:
 		tween.tween_callback(tween.kill)
 
 
-func add_element_to_shop(text: String, texture: String):
+func add_element_to_shop(text: String, texture: Texture2D, amount_needed: int):
 	var shop_element_instance = SHOP_ELEMENT.instantiate()
 	v_box_container.add_child(shop_element_instance)
 	shop_element_instance.update_check_button(false)
