@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://dcqsvgbnkd0as"]
+
+[ext_resource type="Script" path="res://Scripts/shop_element.gd" id="1_3qfn5"]
+[ext_resource type="FontFile" uid="uid://c5ixsst4wuxk1" path="res://Assets/gui/Pacifico-Regular.ttf" id="1_b6vmq"]
+[ext_resource type="Texture2D" uid="uid://deh5vnvw4maw1" path="res://Assets/gui/Butto.png" id="2_l7j3a"]
+[ext_resource type="Texture2D" uid="uid://bi0jpkpkjxr4n" path="res://Assets/gui/Buttons-v.png" id="2_mp1vd"]
+[ext_resource type="Texture2D" uid="uid://61gtm4w753qw" path="res://Assets/gui/caveman.svg" id="3_k1jsq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_37reu"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_sdfpr"]
+font = ExtResource("1_b6vmq")
+font_size = 24
+font_color = Color(0.176471, 0.176471, 0.176471, 1)
+
+[node name="ShopElement" type="HBoxContainer"]
+offset_right = 134.0
+offset_bottom = 43.0
+script = ExtResource("1_3qfn5")
+
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 2
+theme_override_constants/icon_max_width = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_37reu")
+theme_override_icons/checked = ExtResource("2_mp1vd")
+theme_override_icons/unchecked = ExtResource("2_l7j3a")
+button_pressed = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "test"
+label_settings = SubResource("LabelSettings_sdfpr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("3_k1jsq")
+expand_mode = 3
+stretch_mode = 5

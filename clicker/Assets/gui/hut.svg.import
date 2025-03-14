@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtjgeq3arkkqv"
-path="res://.godot/imported/stack.svg-83d47ecfce4015d9dc86cf5b845972f1.ctex"
+uid="uid://c4qjp7e46qv54"
+path="res://.godot/imported/hut.svg-5f404e7e20cef33b64573fa142eb10f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/stack.svg"
-dest_files=["res://.godot/imported/stack.svg-83d47ecfce4015d9dc86cf5b845972f1.ctex"]
+source_file="res://Assets/gui/hut.svg"
+dest_files=["res://.godot/imported/hut.svg-5f404e7e20cef33b64573fa142eb10f7.ctex"]
 
 [params]
 

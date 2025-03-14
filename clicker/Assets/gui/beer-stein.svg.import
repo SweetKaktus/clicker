@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lwnb46rchatg"
-path="res://.godot/imported/beer-stein.svg-dfee552d42bf462aab10d7daba02a2a1.ctex"
+path="res://.godot/imported/beer-stein.svg-2802f468969acf8cd0f9f27df16379c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/beer-stein.svg"
-dest_files=["res://.godot/imported/beer-stein.svg-dfee552d42bf462aab10d7daba02a2a1.ctex"]
+source_file="res://Assets/gui/beer-stein.svg"
+dest_files=["res://.godot/imported/beer-stein.svg-2802f468969acf8cd0f9f27df16379c9.ctex"]
 
 [params]
 

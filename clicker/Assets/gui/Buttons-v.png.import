@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coo3bhiww5r76"
-path="res://.godot/imported/snow_ball_base.png-dca510c8ce5cd8b9ccb64a09b468eea2.ctex"
+uid="uid://bi0jpkpkjxr4n"
+path="res://.godot/imported/Buttons-v.png-bdb1bbd0bae508e95ec339ad9fd4c571.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/snow_ball_base.png"
-dest_files=["res://.godot/imported/snow_ball_base.png-dca510c8ce5cd8b9ccb64a09b468eea2.ctex"]
+source_file="res://Assets/gui/Buttons-v.png"
+dest_files=["res://.godot/imported/Buttons-v.png-bdb1bbd0bae508e95ec339ad9fd4c571.ctex"]
 
 [params]
 

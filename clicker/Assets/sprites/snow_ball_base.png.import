@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://61gtm4w753qw"
-path="res://.godot/imported/caveman.svg-4642cc2eac3a64f6f3a86ba19be1600a.ctex"
+uid="uid://coo3bhiww5r76"
+path="res://.godot/imported/snow_ball_base.png-0c117b88ba847fcb7c201a3975b67217.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/caveman.svg"
-dest_files=["res://.godot/imported/caveman.svg-4642cc2eac3a64f6f3a86ba19be1600a.ctex"]
+source_file="res://Assets/sprites/snow_ball_base.png"
+dest_files=["res://.godot/imported/snow_ball_base.png-0c117b88ba847fcb7c201a3975b67217.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brrq0r6kf1b32"
-path="res://.godot/imported/snow_ball_hover.png-258e6ebfc14e77b3bf7b6ec4cdb24bc4.ctex"
+uid="uid://c8b01wp7p3urc"
+path="res://.godot/imported/Butto-pressed.png-79634681e3d97e455913ec0a3bfe3116.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/snow_ball_hover.png"
-dest_files=["res://.godot/imported/snow_ball_hover.png-258e6ebfc14e77b3bf7b6ec4cdb24bc4.ctex"]
+source_file="res://Assets/gui/Butto-pressed.png"
+dest_files=["res://.godot/imported/Butto-pressed.png-79634681e3d97e455913ec0a3bfe3116.ctex"]
 
 [params]
 
