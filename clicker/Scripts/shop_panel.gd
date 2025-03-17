@@ -43,18 +43,24 @@ func _on_shop_button_pressed() -> void:
 		tween.tween_callback(tween.kill)
 
 
-func add_element_to_shop(text: String, texture: Texture2D, amount_needed: int):
+func add_element_to_shop(item_name: String, texture: Texture2D, amount_needed: int, amount_bought: int = 0, is_active: bool = false):
 	var shop_element = load("res://Scenes/shop_element.tscn")
 	var shop_element_instance = shop_element.instantiate()
 	v_box_container.add_child(shop_element_instance)
-	shop_element_instance.update_check_button(false)
-	shop_element_instance.update_label_text(text)
-	shop_element_instance.update_texture(texture)
+	shop_element_instance.update_item_name(item_name)
+	shop_element_instance.update_icon(texture)
+	shop_element_instance.update_activation(item_name, is_active)
+	shop_element_instance.update_amount_needed(amount_needed)
+	shop_element_instance.update_amount_bought(amount_bought)
 
 func init_shop():
 	if not EVENTBUS.is_shop_initialised:
 		EVENTBUS.is_shop_initialised = true
 		for element in EVENTBUS.shop_items:
-			add_element_to_shop(element.label, element.texture, element.amount_needed)
+			add_element_to_shop(element.item_name, 
+								element.icon, 
+								element.is_active,
+								element.amount_needed, 
+								element.amount_bought)
 	else:
 		pass

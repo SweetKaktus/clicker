@@ -1,54 +1,59 @@
-[gd_scene load_steps=9 format=3 uid="uid://dcqsvgbnkd0as"]
+[gd_scene load_steps=11 format=3 uid="uid://dcqsvgbnkd0as"]
 
 [ext_resource type="Script" path="res://Scripts/shop_element.gd" id="1_3qfn5"]
-[ext_resource type="Texture2D" uid="uid://deh5vnvw4maw1" path="res://Assets/gui/Butto.png" id="2_l7j3a"]
-[ext_resource type="Texture2D" uid="uid://bi0jpkpkjxr4n" path="res://Assets/gui/Buttons-v.png" id="2_mp1vd"]
+[ext_resource type="Texture2D" uid="uid://dmqkukboknef1" path="res://Assets/gui/Buttons-shoping-cart.png" id="2_1ei2j"]
 [ext_resource type="Texture2D" uid="uid://61gtm4w753qw" path="res://Assets/gui/caveman.svg" id="3_k1jsq"]
-[ext_resource type="Texture2D" uid="uid://dsw3lgfo3u4nn" path="res://Assets/gui/bouton_grisé.png" id="4_b3j6b"]
 [ext_resource type="LabelSettings" uid="uid://erj0atwwk6xc" path="res://Resources/shop_element.tres" id="4_n2a3q"]
-[ext_resource type="Texture2D" uid="uid://dboqq1sqraerq" path="res://Assets/gui/bouton_checked_grisé.png" id="4_oeew6"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_37reu"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-content_margin_bottom = 0.0
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0rxlu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rdvei"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ck6lb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oc5w8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w4nbh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jw7u3"]
 
 [node name="ShopElement" type="HBoxContainer"]
 offset_right = 134.0
 offset_bottom = 43.0
 script = ExtResource("1_3qfn5")
 
-[node name="CheckButton" type="CheckButton" parent="."]
+[node name="PurchaseBTN" type="Button" parent="."]
 layout_mode = 2
 theme_override_constants/icon_max_width = 32
-theme_override_styles/focus = SubResource("StyleBoxEmpty_37reu")
-theme_override_icons/checked = ExtResource("2_mp1vd")
-theme_override_icons/unchecked = ExtResource("2_l7j3a")
-theme_override_icons/checked_disabled = ExtResource("4_oeew6")
-theme_override_icons/unchecked_disabled = ExtResource("4_b3j6b")
-disabled = true
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0rxlu")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_rdvei")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ck6lb")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_oc5w8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_w4nbh")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jw7u3")
+icon = ExtResource("2_1ei2j")
 
-[node name="Label" type="Label" parent="."]
+[node name="ItemNameLB" type="Label" parent="."]
 layout_mode = 2
 text = "test"
 label_settings = ExtResource("4_n2a3q")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="IconTR" type="TextureRect" parent="."]
 layout_mode = 2
 texture = ExtResource("3_k1jsq")
 expand_mode = 3
 stretch_mode = 5
 
-[node name="amount_needed" type="Label" parent="."]
+[node name="AmountNeededLB" type="Label" parent="."]
 layout_mode = 2
 text = "2"
 label_settings = ExtResource("4_n2a3q")
 
-[node name="amount_bought" type="Label" parent="."]
+[node name="AmountBoughtLB" type="Label" parent="."]
 layout_mode = 2
 text = "0
 "
 label_settings = ExtResource("4_n2a3q")
 
-[connection signal="pressed" from="CheckButton" to="." method="_on_check_button_pressed"]
+[connection signal="button_down" from="PurchaseBTN" to="." method="_on_purchase_button_button_down"]
+[connection signal="button_up" from="PurchaseBTN" to="." method="_on_purchase_button_button_up"]

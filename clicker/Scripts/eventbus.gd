@@ -14,7 +14,7 @@ var shop_items: Array
 
 var is_shop_initialised: bool = false
 
-signal check_activation(is_active : bool)
+signal check_activation(item_name: String, is_active : bool)
 signal init_shop
 
 var icons_for_check_box = {
