@@ -79,17 +79,19 @@ func update_counter() -> void:
 			shop_item.is_active = true
 		EVENTBUS.check_activation.emit(shop_item.item_name, shop_item.is_active)
 
-
+# La fonction redimensionne l'icône lorsqu'on clic dessus
 func _on_texture_button_button_down() -> void:
 	snowball.size = pressed_size
 	snowball.position = pressed_position
 
+# La fonction permet d'ajouter 1 au snowballs_collected quand on rempli la barre de progression
 func _on_progress_bar_value_changed(value: float) -> void:
 	if value >= 100:
 		progress_bar.value = 0
 		snowballs_collected += 1
 		update_counter()
 
+# Permet d'initialiser le shop
 func trigger_init_shop():
 	if not EVENTBUS.is_shop_initialised:
 		EVENTBUS.init_shop.emit()
